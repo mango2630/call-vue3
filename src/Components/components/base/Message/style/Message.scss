@@ -1,0 +1,49 @@
+@import '../../styles/var.scss';
+@import '../../styles/common.scss';
+
+$--tk-message-font-size: $--tk-font-size-base;
+$--tk-message-border-radius: $--tk-border-radius-base;
+
+.#{$PREFIX}-message {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  border-radius: #{$--tk-message-border-radius};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: #{$--tk-message-font-size};
+  z-index: 9999;
+  color: $--tk-color-black;
+  border-color: $--tk-color-info-light-8;
+  background-color: $--tk-color-info-light-9;
+
+  .#{$PREFIX}-message_icon {
+    margin-right: 5px;
+  }
+  .#{$PREFIX}-message_close {
+    cursor: pointer;
+    margin-left: 5px;
+  }
+}
+.#{$PREFIX}-message--info {
+  color: $--tk-color-info;
+  border-color: $--tk-color-info-light-8;
+  background-color: $--tk-color-info-light-9;
+}
+.#{$PREFIX}-message--success {
+  color: $--tk-color-success;
+  border-color: $--tk-color-success-light-8;
+  background-color: $--tk-color-success-light-9;
+}
+.#{$PREFIX}-message--warning {
+  color: $--tk-color-warning;
+  border-color: $--tk-color-warning-light-8;
+  background-color: $--tk-color-warning-light-9;
+}
+.#{$PREFIX}-message--error {
+  color: $--tk-color-error;
+  border-color: $--tk-color-error-light-8;
+  background-color: $--tk-color-error-light-9;
+}

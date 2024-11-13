@@ -1,0 +1,42 @@
+@import '../../styles/var.scss';
+@import '../../styles/common.scss';
+
+$--tk-button-size-default: $--tk-button-size-middle;
+
+.#{$PREFIX}-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  &.#{$PREFIX}-button--small {
+    height: $--tk-button-size-small;
+  }
+
+  &.#{$PREFIX}-button--middle {
+    height: $--tk-button-size-middle;
+  }
+
+  &.#{$PREFIX}-button--large {
+    height: $--tk-button-size-large;
+  }
+
+  .#{$PREFIX}-button--content {
+    color: $--tk-text-color-regular;
+    font-size: $--tk-font-size-base;
+    font-weight: $--tk-font-weight-primary;
+  }
+
+  &.#{$PREFIX}-circle {
+    &.#{$PREFIX}-button--small {
+      width: $--tk-button-size-small;
+    }
+
+    &.#{$PREFIX}-button--default {
+      width: $--tk-button-size-default;
+    }
+
+    &.#{$PREFIX}-button--large {
+      width: $--tk-button-size-large;
+    }
+  }
+}

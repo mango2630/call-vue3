@@ -1,0 +1,43 @@
+@import './var.scss';
+
+$justify-content:(
+  start: flex-start, 
+  center: center,
+  end: flex-end, 
+  'space-between': space-between,
+  'space-around': space-around,
+  'space-evenly': space-evenly,
+);
+
+$align-items:(
+  center: center,
+  start: flex-start,
+  end: flex-end,
+  stretch: stretch,
+  baseline: baseline,
+);
+
+@each $name, $value in $justify-content {
+  .#{$PREFIX}-justify-#{$name} {
+    justify-content: $value;
+  }
+}
+
+@each $name, $value in $align-items {
+  .#{$PREFIX}-align-#{$name} {
+    align-items: $value;
+  }
+}
+
+.#{$PREFIX}-blur {
+  backdrop-filter: blur($--tk-backdrop-filter-default);
+  -webkit-backdrop-filter: blur($--tk-backdrop-filter-default);
+}
+
+.#{$PREFIX}-round {
+  border-radius: $--tk-border-radius-round;
+}
+
+.#{$PREFIX}-circle {
+  border-radius: $--tk-border-radius-circle;
+}

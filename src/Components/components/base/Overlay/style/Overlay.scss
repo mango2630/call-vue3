@@ -1,0 +1,40 @@
+@import '../../styles/var.scss';
+@import '../../styles/common.scss';
+
+$--tk-overlay-bg-color: $--tk-overlay-color-lighter;
+
+.#{$PREFIX}-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+
+  .#{$PREFIX}-overlay_mask-container {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    position: absolute;
+  }
+
+  .#{$PREFIX}-overlay_mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $--tk-overlay-bg-color;
+    z-index: 1;
+  }
+
+  .#{$PREFIX}-overlay_slot {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+  }
+}

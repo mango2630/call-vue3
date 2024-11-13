@@ -1,0 +1,18 @@
+@import '../../styles/var.scss';
+@import '../../styles/common.scss';
+
+$--tk-loading-primary-color: $--tk-color-primary;
+$--tk-loading-other-color: #fff0;
+$--tk-loading-border-width: 2px;
+$--tk-loading-border-style: $--tk-border-style;
+$--tk-loading-layout: column;
+
+.#{$PREFIX}-loading {
+  display: flex;
+  align-items: center;
+  flex-direction: $--tk-loading-layout;
+
+  .#{$PREFIX}-loading_text {
+    margin: 10px;
+  }
+}

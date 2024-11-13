@@ -1,0 +1,21 @@
+.overlay-stream-container {
+  &.pc {
+    .overlay-stream-content-container {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+
+      .overlay-stream-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  
+        .overlay-stream-info {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@import '../../styles/var.scss';
+@import '../../styles/common.scss';
+
+.#{$PREFIX}-text {
+  display: inline-block;
+  overflow: hidden;
+  text-align: center;
+  line-height: normal;
+  white-space: nowrap;
+  font-weight: $--tk-font-weight-base;
+  font-size: $--tk-font-size-base;
+  color: $--tk-text-color-primary;
+
+  &.#{$PREFIX}-text--line-clamp {
+    display: -webkit-inline-box;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+  }
+}

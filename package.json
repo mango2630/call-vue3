@@ -1,0 +1,21 @@
+{
+  "name": "natural-call-vue",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/"
+  },
+  "description": "A call with vue.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "call",
+    "video",
+    "audio"
+  ],
+  "homepage": "https://cloud.tencent.com/document/product/647/78731",
+  "author": "",
+  "license": "ISC"
+}

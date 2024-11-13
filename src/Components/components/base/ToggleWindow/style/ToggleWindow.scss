@@ -1,0 +1,7 @@
+@import '../../styles/var.scss';
+@import '../../styles/common.scss';
+
+.#{$PREFIX}-toggle-window {
+  height: 100%;
+  position: relative;
+}

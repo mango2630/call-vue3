@@ -1,0 +1,26 @@
+@import '../../../styles/var.scss';
+@import '../../../styles/common.scss';
+
+.#{$PREFIX}-loading_circle-container {
+  height: 100%;
+  border: $--tk-loading-border-width $--tk-loading-border-style;
+  border-radius: 50%;
+  border-top-color: $--tk-loading-other-color;
+  border-right-color: $--tk-loading-other-color;
+  border-bottom-color: $--tk-loading-primary-color;
+  border-left-color: $--tk-loading-primary-color;
+  background: 0 0;
+  vertical-align: middle;
+  box-sizing: border-box;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

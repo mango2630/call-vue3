@@ -1,0 +1,32 @@
+.overlay-stream-container {
+  &.mobile {
+    .overlay-stream-content-container {
+      width: 100%;
+      top: 26%;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      .overlay-stream-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .overlay-stream-avatar {
+          margin-bottom: 12px;
+        }
+    
+        .overlay-stream-info {
+          display: flex;
+          align-items: center;
+        }
+    
+        .overlay-stream-tip {
+          margin-top: 12px;
+          color: #FFF;
+        }
+      }
+    }
+  }
+}

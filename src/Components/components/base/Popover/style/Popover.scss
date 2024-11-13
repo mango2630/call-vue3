@@ -1,0 +1,30 @@
+@import '../../styles/var.scss';
+@import '../../styles/common.scss';
+
+.#{$PREFIX}-popover {
+  position: relative;
+  .#{$PREFIX}-popover_content {
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 120px;
+    position: absolute;
+    background: #FFFFFF;
+    border-radius: $--tk-border-radius-base;
+    font-size: $--tk-font-size-base;
+    box-shadow: $--tk-box-shadow-light;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .#{$PREFIX}-popover_arrow {
+    position: absolute;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+  }
+  .#{$PREFIX}-popover_trigger {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+  }
+}

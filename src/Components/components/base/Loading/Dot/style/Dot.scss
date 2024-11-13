@@ -1,0 +1,61 @@
+@import '../../../styles/var.scss';
+@import '../../../styles/common.scss';
+
+.#{$PREFIX}-loading_dot-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+
+  & .#{$PREFIX}-loading_dot:nth-child(1) {
+    opacity: 0;
+    animation-duration: 0.8s;
+    animation-delay: 0s;
+    animation-play-state: running;
+  }
+
+  & .#{$PREFIX}-loading_dot:nth-child(2) {
+    opacity: 0.083;
+    animation-duration: 0.8s;
+    animation-delay: 0.26666666666666666s;
+    animation-play-state: running;
+  }
+
+  & .#{$PREFIX}-loading_dot:nth-child(3) {
+    opacity: 0.1667;
+    animation-duration: 0.8s;
+    animation-delay: 0.5333333333333333s;
+    animation-play-state: running;
+  }
+
+  .#{$PREFIX}-loading_dot {
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    background-color: $--tk-loading-primary-color;
+    animation-duration: 1.8s;
+    animation-name: dotting;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+  }
+}
+
+@keyframes dotting {
+  0% {
+    opacity: 0.15;
+  }
+
+  1% {
+    opacity: 0.8;
+  }
+  33% {
+    opacity: 0.8;
+  }
+  34% {
+    opacity: 0.15;
+  }
+  100% {
+    opacity: 0.15;
+  }
+}

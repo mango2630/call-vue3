@@ -1,0 +1,13 @@
+@import '../../../styles/common.scss';
+@import '../../../styles/var.scss';
+
+.#{$PREFIX}-grid-item {
+  display: flex;
+  justify-content: center;
+
+  &.h5 {
+    transition-property: width,height,left,top;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+  }
+}

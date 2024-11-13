@@ -1,0 +1,10 @@
+@import '../../../styles/var.scss';
+@import '../../../styles/common.scss';
+
+.#{$PREFIX}-row {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+}
